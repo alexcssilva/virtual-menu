@@ -1,19 +1,21 @@
 package com.example.trybevirtualmenu.views
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.trybevirtualmenu.R
 import com.example.trybevirtualmenu.models.DishesDatabase
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.imageview.ShapeableImageView
 import com.google.android.material.textview.MaterialTextView
 
 class MenuItemDetailActivity : AppCompatActivity() {
 
-    private val image: ShapeableImageView by lazy { findViewById(R.id.detail_image)}
-    private val name: MaterialTextView by lazy { findViewById(R.id.detail_name)}
-    private val description: MaterialTextView by lazy { findViewById(R.id.detail_description)}
-    private val price: MaterialTextView by lazy { findViewById(R.id.detail_price)}
-
+    private val image: ShapeableImageView by lazy { findViewById(R.id.detail_image) }
+    private val name: MaterialTextView by lazy { findViewById(R.id.detail_name) }
+    private val description: MaterialTextView by lazy { findViewById(R.id.detail_description) }
+    private val price: MaterialTextView by lazy { findViewById(R.id.detail_price) }
+    private val backButton: MaterialButton by lazy { findViewById(R.id.detail_back) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,5 +28,10 @@ class MenuItemDetailActivity : AppCompatActivity() {
         name.text = dish.name
         description.text = dish.description
         price.text = dish.price.toString()
+
+        backButton.setOnClickListener {
+            val intent = Intent(baseContext, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

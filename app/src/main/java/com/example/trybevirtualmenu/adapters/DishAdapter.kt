@@ -11,7 +11,7 @@ import com.example.trybevirtualmenu.models.Dish
 import com.google.android.material.imageview.ShapeableImageView
 import com.google.android.material.textview.MaterialTextView
 
-class DishAdapter(val dishes: List<Dish>) : Adapter<DishAdapter.DishViewHolder>() {
+class DishAdapter(private val dishes: List<Dish>) : Adapter<DishAdapter.DishViewHolder>() {
 
     private var dishListener: DishItemListener? = null
 

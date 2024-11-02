@@ -13,7 +13,7 @@ import com.example.trybevirtualmenu.models.DishesDatabase
 
 class MainActivity : AppCompatActivity(), DishItemListener {
 
-    private val dishList: RecyclerView by lazy {findViewById(R.id.main_menu)}
+    private val dishList: RecyclerView by lazy { findViewById(R.id.main_menu) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity(), DishItemListener {
 
         dishList.layoutManager = LinearLayoutManager(baseContext)
         dishList.adapter = adapter
-
     }
 
     override fun onDishClick(view: View, position: Int) {

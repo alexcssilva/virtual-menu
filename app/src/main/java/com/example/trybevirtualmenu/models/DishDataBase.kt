@@ -47,7 +47,7 @@ object DishesDatabase {
         )
     )
 
-    fun getDishesById(id: Int) = dishes.find { it.id == id}
+    fun getDishesById(id: Int) = dishes.find { it.id == id }
 
     fun getDishes() = dishes
 }

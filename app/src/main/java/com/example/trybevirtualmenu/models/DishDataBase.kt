@@ -2,7 +2,7 @@ package com.example.trybevirtualmenu.models
 
 import com.example.trybevirtualmenu.R
 
-object FoodDatabase {
+object DishDataBase {
 
     private val foods = listOf<Dish>(
         Dish(
@@ -71,7 +71,7 @@ object FoodDatabase {
         )
     )
 
-    fun getFoodById(id: Int) = foods.find { it.id == id }
+    fun getDishesById(id: Int) = foods.find { it.id == id }
 
-    fun getFoods() = foods
+    fun getDishes() = foods
 }

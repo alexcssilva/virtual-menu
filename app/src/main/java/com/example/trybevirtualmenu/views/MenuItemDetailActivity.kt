@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.trybevirtualmenu.R
-import com.example.trybevirtualmenu.models.DishesDatabase
+import com.example.trybevirtualmenu.models.DishDataBase
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.imageview.ShapeableImageView
 import com.google.android.material.textview.MaterialTextView
@@ -22,7 +22,7 @@ class MenuItemDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu_item_detail)
 
         val dishId = intent.getIntExtra("dish_id", 0)
-        val dish = DishesDatabase.getDishesById(dishId + 1)!!
+        val dish = DishDataBase.getDishesById(dishId + 1)!!
 
         image.setImageResource(dish.photo)
         name.text = dish.name

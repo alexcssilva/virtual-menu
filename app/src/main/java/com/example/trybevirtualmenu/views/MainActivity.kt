@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.trybevirtualmenu.R
 import com.example.trybevirtualmenu.adapters.DishAdapter
 import com.example.trybevirtualmenu.interfaces.DishItemListener
-import com.example.trybevirtualmenu.models.DishesDatabase
+import com.example.trybevirtualmenu.models.DishDataBase
 
 class MainActivity : AppCompatActivity(), DishItemListener {
 
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity(), DishItemListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dishes = DishesDatabase.getDishes()
+        val dishes = DishDataBase.getDishes()
 
         val adapter = DishAdapter(dishes)
         adapter.setDishListener(this)

@@ -17,7 +17,7 @@ object DishDataBase {
     private const val FRENCH_FRIES_PRICE = 20.00
     private const val ORANGE_JUICE_PRICE = 10.00
 
-    private val dishes = listOf(
+    private val dishes = listOf<Dish>(
         Dish(
             BEEF_FRIES_ID,
             "File de Carne com Fritas",

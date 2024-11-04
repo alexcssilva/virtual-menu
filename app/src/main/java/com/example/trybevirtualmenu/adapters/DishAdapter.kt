@@ -25,7 +25,7 @@ class DishAdapter(private val dishes: List<Dish>) : Adapter<DishAdapter.DishView
 
         init {
             view.setOnClickListener {
-                dishListener?.onDishClick(view, layoutPosition + 1)
+                dishListener?.onDishClick(view, adapterPosition )
             }
         }
     }
@@ -38,7 +38,7 @@ class DishAdapter(private val dishes: List<Dish>) : Adapter<DishAdapter.DishView
     }
 
     override fun onBindViewHolder(holder: DishViewHolder, position: Int) {
-        holder.image.setImageResource(dishes[position].photo)
+        holder.image.setImageResource(dishes[position].image)
         holder.name.text = dishes[position].name
     }
 

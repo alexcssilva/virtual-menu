@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), DishItemListener {
 
     override fun onDishClick(view: View, position: Int) {
         val intent = Intent(baseContext, MenuItemDetailActivity::class.java)
-        intent.putExtra("dish_id", position)
+        intent.putExtra("id", position)
         startActivity((intent))
     }
 }

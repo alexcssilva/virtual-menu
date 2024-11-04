@@ -25,7 +25,7 @@ class DishAdapter(private val dishes: List<Dish>) : Adapter<DishAdapter.DishView
 
         init {
             view.setOnClickListener {
-                dishListener?.onDishClick(view, bindingAdapterPosition)
+                dishListener?.onDishClick(view, layoutPosition + 1)
             }
         }
     }

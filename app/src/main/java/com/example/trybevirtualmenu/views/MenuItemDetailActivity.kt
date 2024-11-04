@@ -23,11 +23,11 @@ class MenuItemDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu_item_detail)
 
         backButton.setOnClickListener {
-            val it = Intent(baseContext, MainActivity::class.java)
-            startActivity(it)
+            val intent = Intent(baseContext, MainActivity::class.java)
+            startActivity(intent)
         }
 
-        val dishId = intent.getIntExtra("product_id", 0)
+        val dishId = intent.getIntExtra("dish_id", 0)
         val dish = DishesDatabase.getDishesById(dishId)!!
 
         image.setImageResource(dish.image)

@@ -7,9 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.trybevirtualmenu.R
 import com.example.trybevirtualmenu.models.DishesDatabase
-import com.google.android.material.button.MaterialButton
 import com.google.android.material.imageview.ShapeableImageView
-import com.google.android.material.textview.MaterialTextView
 
 class MenuItemDetailActivity : AppCompatActivity() {
 

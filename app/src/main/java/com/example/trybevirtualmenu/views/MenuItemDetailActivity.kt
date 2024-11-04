@@ -15,13 +15,19 @@ class MenuItemDetailActivity : AppCompatActivity() {
     private val name: TextView by lazy { findViewById(R.id.detail_name) }
     private val description: TextView by lazy { findViewById(R.id.detail_description) }
     private val price: TextView by lazy { findViewById(R.id.detail_price) }
+
     private val backButton: Button by lazy { findViewById(R.id.detail_back) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_item_detail)
 
-        val dishId = intent.getIntExtra("dish_id", 0)
+        backButton.setOnClickListener {
+            val it = Intent(baseContext, MainActivity::class.java)
+            startActivity(it)
+        }
+
+        val dishId = intent.getIntExtra("product_id", 0)
         val dish = DishesDatabase.getDishesById(dishId)!!
 
         image.setImageResource(dish.image)
@@ -30,11 +36,6 @@ class MenuItemDetailActivity : AppCompatActivity() {
         price.text = buildString {
             append("R$ ")
             append(dish.price.toString())
-        }
-
-        backButton.setOnClickListener {
-            val intent = Intent(baseContext, MainActivity::class.java)
-            startActivity(intent)
         }
     }
 }

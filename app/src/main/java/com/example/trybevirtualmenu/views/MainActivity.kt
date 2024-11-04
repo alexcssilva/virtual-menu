@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity(), DishItemListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dishes = DishesDatabase.getDishes()
+        val products = DishesDatabase.getDishes()
 
-        val adapter = DishAdapter(dishes)
+        val adapter = DishAdapter(products)
         adapter.setDishListener(this)
 
         dishList.layoutManager = LinearLayoutManager(baseContext)
@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity(), DishItemListener {
     }
 
     override fun onDishClick(view: View, position: Int) {
-        val intent = Intent(baseContext, MenuItemDetailActivity::class.java)
-        intent.putExtra("dish_id", position)
-        startActivity((intent))
+        val it = Intent(baseContext, MenuItemDetailActivity::class.java)
+        it.putExtra("dish_id", position)
+        startActivity(it)
     }
 }

@@ -3,7 +3,7 @@ package com.example.trybevirtualmenu.models
 import com.example.trybevirtualmenu.R
 
 object DishesDatabase {
-    private val dishes = listOf<Dish>(
+    private val dishes = listOf(
         Dish(
             0,
             "File de Carne com Fritas",

@@ -3,25 +3,23 @@ package com.example.trybevirtualmenu.models
 import com.example.trybevirtualmenu.R
 
 object DishDataBase {
-    // Constantes para IDs dos pratos
-    private const val FILE_COM_FRITAS_ID = 1
-    private const val FRANGO_GRELHADO_ID = 2
-    private const val MIX_FILE_FRANGO_ID = 3
-    private const val PICANHA_GRELHADA_ID = 4
-    private const val BATATAS_FRITAS_ID = 5
-    private const val SUCO_LARANJA_ID = 6
+    private const val STEAK_AND_FRIES_ID = 1
+    private const val GRILLED_CHICKEN_ID = 2
+    private const val MIXED_GRILL_ID = 3
+    private const val GRILLED_PICANHA_ID = 4
+    private const val FRENCH_FRIES_ID = 5
+    private const val ORANGE_JUICE_ID = 6
 
-    // Constantes para preços
-    private const val PRICE_FILE_COM_FRITAS = 65.00
-    private const val PRICE_FRANGO_GRELHADO = 45.00
-    private const val PRICE_MIX_FILE_FRANGO = 85.00
+    private const val PRICE_STEAK_AND_FRIES = 65.00
+    private const val PRICE_GRILLED_CHICKEN = 45.00
+    private const val PRICE_MIXED_GRILL = 85.00
     private const val PRICE_PICANHA = 85.00
-    private const val PRICE_BATATAS = 20.00
-    private const val PRICE_SUCO = 10.00
+    private const val PRICE_FRIES = 20.00
+    private const val PRICE_JUICE = 10.00
 
     private val dishes = listOf<Dish>(
         Dish(
-            FILE_COM_FRITAS_ID,
+            STEAK_AND_FRIES_ID,
             "File de Carne com Fritas",
             R.drawable.prato_01,
             """
@@ -29,10 +27,10 @@ object DishDataBase {
                 com deliciosas batatas fritas crocantes. Uma explosão de sabor que vai 
                 satisfazer seus desejos mais carnívoros.
             """.trimIndent(),
-            PRICE_FILE_COM_FRITAS
+            PRICE_STEAK_AND_FRIES
         ),
         Dish(
-            FRANGO_GRELHADO_ID,
+            GRILLED_CHICKEN_ID,
             "Frango Grelhado com Legumes",
             R.drawable.prato_02,
             """
@@ -41,10 +39,10 @@ object DishDataBase {
                 a crocância e o sabor. Uma refeição leve e deliciosa para quem busca 
                 um toque de frescor.
             """.trimIndent(),
-            PRICE_FRANGO_GRELHADO
+            PRICE_GRILLED_CHICKEN
         ),
         Dish(
-            MIX_FILE_FRANGO_ID,
+            MIXED_GRILL_ID,
             "Mix de File de Carne e Frango Grelhados",
             R.drawable.prato_03,
             """
@@ -53,10 +51,10 @@ object DishDataBase {
                 explosão de sabores em cada garfada. Acompanhado de opções de molhos
                 que tornam essa escolha ainda mais especial.
             """.trimIndent(),
-            PRICE_MIX_FILE_FRANGO
+            PRICE_MIXED_GRILL
         ),
         Dish(
-            PICANHA_GRELHADA_ID,
+            GRILLED_PICANHA_ID,
             "Picanha Grelhada com Macaxeira Frita",
             R.drawable.prato_04,
             """
@@ -67,7 +65,7 @@ object DishDataBase {
             PRICE_PICANHA
         ),
         Dish(
-            BATATAS_FRITAS_ID,
+            FRENCH_FRIES_ID,
             "Porção de Batatas Fritas com Molho",
             R.drawable.prato_05,
             """
@@ -77,10 +75,10 @@ object DishDataBase {
                 tornar cada mordida ainda mais especial. Acompanhamento perfeito
                 para qualquer refeição.
             """.trimIndent(),
-            PRICE_BATATAS
+            PRICE_FRIES
         ),
         Dish(
-            SUCO_LARANJA_ID,
+            ORANGE_JUICE_ID,
             "Suco de Laranja",
             R.drawable.bebida_01,
             """
@@ -90,7 +88,7 @@ object DishDataBase {
                 para acompanhar suas refeições ou para matar a sede a qualquer hora 
                 do dia. Deleite-se com o gosto da natureza em um copo.
             """.trimIndent(),
-            PRICE_SUCO
+            PRICE_JUICE
         )
     )
 

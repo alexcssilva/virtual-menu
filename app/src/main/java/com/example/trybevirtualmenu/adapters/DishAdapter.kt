@@ -33,6 +33,7 @@ class DishAdapter(private val dishes: List<Dish>) : Adapter<DishAdapter.DishView
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DishViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_menu_layout, parent, false)
+
         return DishViewHolder(view, dishListener)
     }
 

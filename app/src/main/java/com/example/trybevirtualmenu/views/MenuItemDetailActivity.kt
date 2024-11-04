@@ -21,8 +21,8 @@ class MenuItemDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_item_detail)
 
-        val dishId = intent.getIntExtra("dish_id", 0)
-        val dish = DishDataBase.getDishesById(dishId + 1)!!
+        val dishId = intent.getIntExtra("id", 0)
+        val dish = DishDataBase.getDishesById(dishId)!!
 
         image.setImageResource(dish.photo)
         name.text = dish.name

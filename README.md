@@ -1,53 +1,48 @@
-# Menu Digital - Aplicativo de Cardápio Mobile
+# Virtual Menu - Cardápio Digital para Restaurante
 
 ## Sobre o Projeto
-Desenvolvi um aplicativo de cardápio mobile usando Kotlin e Android nativo. O objetivo foi criar uma interface intuitiva que permite aos usuários visualizarem os pratos disponíveis e acessarem detalhes de cada item de forma simples e elegante.
+Desenvolvi um aplicativo de cardápio virtual para Android usando Kotlin, criando uma experiência intuitiva para visualização de pratos e seus detalhes. O app permite aos usuários navegarem pelos pratos do restaurante de forma simples e elegante.
 
+## Preview
 <p align="center">
   <a href="https://www.figma.com/design/acbFYaIENw4s2GhQwx5OfR/Virtual-Menu?node-id=7-1683&t=YyaxGNkqN80r7cVF-1"><img src="./assets/projeto-virtual-menu.png" alt="tela-virtual-menu"/></a>
 </p>
 
-## Funcionalidades
-- Lista de pratos disponíveis
-- Detalhes individuais de cada prato
-- Interface responsiva e moderna
-- Navegação fluida entre telas
+## O que ele faz?
+O aplicativo oferece:
+- Lista completa de pratos do restaurante
+- Visualização detalhada de cada item do cardápio
+- Navegação intuitiva entre telas
+- Informações como imagem, nome, descrição e preço dos pratos
 
-## Tecnologias Utilizadas
-- Kotlin
-- Android Studio
-- RecyclerView
-- Material Design
-- ViewGroups (ConstraintLayout, LinearLayout)
-- Espresso para testes
+## Como foi feito?
+Tecnologias e recursos utilizados:
+- Kotlin como linguagem principal
+- RecyclerView para lista de pratos
+- Material Design para interface moderna
+- Navegação entre activities
+- Adaptadores para manipulação de dados
+- Layout responsivo com LinearLayout e ScrollView
+- Testes automatizados com Espresso
+- Análise de código com Ktlint e Detekt
 
-## Como Configurar e Rodar o Projeto
+## Orientações
+#### 1. Clone o repositório
+- `git clone https://github.seu-usuario/virtual-menu.git`
 
-### Pré-requisitos
-- Android Studio
-- JDK 11+
-- Dispositivo Android ou Emulador
+#### 2. Configuração
+- Abra o projeto no Android Studio
+- Sincronize o arquivo `build.gradle`
 
-### Instalação
-1. Clone o repositório
-```bash
-git clone https://github.seu-usuario/menu-digital.git
-```
+#### 3. Executar testes
+- Rode os testes instrumentados no Android Studio
 
-2. Abra o projeto no Android Studio
-3. Sincronize as dependências do Gradle
-4. Execute o projeto no emulador ou dispositivo
-
-## Estrutura do Projeto
-- `MainActivity`: Tela principal com lista de pratos
-- `MenuItemDetailActivity`: Tela de detalhes do prato
-- Layout XML para configuração das interfaces
-- Adaptadores e classes de dados para gerenciamento da lista
-
-## Próximos Passos
-- Implementar integração com backend
-- Adicionar funcionalidade de pedidos
-- Melhorar acessibilidade
+## Para que serve?
+O Virtual Menu simplifica a experiência de consulta de cardápio, permitindo:
+- Visualizar pratos disponíveis
+- Conhecer detalhes de cada item
+- Facilitar a escolha do cliente
+- Apresentar informações de forma clara e atraente
 
 ---
 Desenvolvido por Alex Silva - [@alexcssilva](https://github.com/alexcssilva)

@@ -1,4 +1,4 @@
-package com.example.trybevirtualmenu.adapters
+package com.alexsilva.virtualmenu.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,9 +6,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import com.example.trybevirtualmenu.R
-import com.example.trybevirtualmenu.interfaces.DishItemListener
-import com.example.trybevirtualmenu.models.Dish
+import com.alexsilva.virtualmenu.R
+import com.alexsilva.virtualmenu.interfaces.DishItemListener
+import com.alexsilva.virtualmenu.models.Dish
 import com.google.android.material.imageview.ShapeableImageView
 
 class DishAdapter(private val dishes: List<Dish>) : Adapter<DishAdapter.DishViewHolder>() {

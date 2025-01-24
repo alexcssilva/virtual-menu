@@ -1,9 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme -->
     <style name="Base.Theme.TrybeVirtualMenu" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Defina suas próprias cores para evitar o roxo -->
+        <item name="colorPrimary">@color/app_background</item> <!-- Verde -->
+        <item name="colorPrimaryVariant">@color/app_background</item> <!-- Verde -->
+        <item name="colorSecondary">@color/app_background</item> <!-- Verde -->
+        <item name="colorSecondaryVariant">@color/app_background</item> <!-- Verde -->
+
+        <!-- Defina o fundo da janela para usar o app_background -->
+        <item name="android:windowBackground">@color/app_background</item>
+
+        <!-- Opcionalmente, defina as cores de texto para que correspondam ao tema -->
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+
     </style>
 
+    <!-- Tema final para seu aplicativo -->
     <style name="Theme.TrybeVirtualMenu" parent="Base.Theme.TrybeVirtualMenu" />
 </resources>

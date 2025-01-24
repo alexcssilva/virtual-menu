@@ -1,4 +1,4 @@
-package com.example.trybevirtualmenu.interfaces
+package com.alexsilva.virtualmenu.interfaces
 
 import android.view.View
 

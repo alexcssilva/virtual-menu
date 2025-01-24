@@ -1,4 +1,4 @@
-package com.example.trybevirtualmenu.views
+package com.alexsilva.virtualmenu.views
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,10 +6,10 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.trybevirtualmenu.R
-import com.example.trybevirtualmenu.adapters.DishAdapter
-import com.example.trybevirtualmenu.interfaces.DishItemListener
-import com.example.trybevirtualmenu.models.DishesDatabase
+import com.alexsilva.virtualmenu.R
+import com.alexsilva.virtualmenu.adapters.DishAdapter
+import com.alexsilva.virtualmenu.interfaces.DishItemListener
+import com.alexsilva.virtualmenu.models.DishesDatabase
 
 class MainActivity : AppCompatActivity(), DishItemListener {
 

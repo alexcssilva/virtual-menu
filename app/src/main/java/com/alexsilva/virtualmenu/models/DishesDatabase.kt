@@ -1,6 +1,6 @@
-package com.example.trybevirtualmenu.models
+package com.alexsilva.virtualmenu.models
 
-import com.example.trybevirtualmenu.R
+import com.alexsilva.virtualmenu.R
 
 object DishesDatabase {
     private val dishes = listOf(

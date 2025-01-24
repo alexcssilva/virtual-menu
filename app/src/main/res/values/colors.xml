@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="gray">#90918c</color>
-    <color name="primary">#181B16</color>
-    <color name="secondary">#86957d</color>
-    <color name="Tertiary">#6b999b</color>
+    <color name="app_background">#FFF8E1</color>
+    <color name="card_background">#FFF8E1</color>
+    <color name="primary_text">#333333</color>
+    <color name="secondary_text">#666666</color>
+    <color name="card_border">#E0D3AF</color>
+    <color name="button_background">#81C784</color>
+    <color name="button_text">#333333</color>
+    <color name="detail_background">#FFF8E1</color>
+    <color name="detail_title">#333333</color>
+    <color name="detail_description">#4F4F4F</color>
+    <color name="detail_price">#388E3C</color>
 </resources>
+

@@ -1,4 +1,4 @@
-package com.example.trybevirtualmenu
+package com.alexsilva.virtualmenu
 
 import android.content.Context
 import android.widget.Button
@@ -16,7 +16,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withParent
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.example.trybevirtualmenu.views.MenuItemDetailActivity
+import com.alexsilva.virtualmenu.views.MenuItemDetailActivity
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

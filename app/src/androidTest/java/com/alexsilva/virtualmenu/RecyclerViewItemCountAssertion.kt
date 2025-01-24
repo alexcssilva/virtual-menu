@@ -1,4 +1,4 @@
-package com.example.trybevirtualmenu
+package com.alexsilva.virtualmenu
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

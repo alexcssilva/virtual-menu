@@ -1,4 +1,4 @@
-package com.example.trybevirtualmenu.models
+package com.alexsilva.virtualmenu.models
 
 data class Dish(
     val id: Int,

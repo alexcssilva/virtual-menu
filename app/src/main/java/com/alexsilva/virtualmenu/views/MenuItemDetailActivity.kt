@@ -1,12 +1,12 @@
-package com.example.trybevirtualmenu.views
+package com.alexsilva.virtualmenu.views
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.trybevirtualmenu.R
-import com.example.trybevirtualmenu.models.DishesDatabase
+import com.alexsilva.virtualmenu.R
+import com.alexsilva.virtualmenu.models.DishesDatabase
 import com.google.android.material.imageview.ShapeableImageView
 
 class MenuItemDetailActivity : AppCompatActivity() {
